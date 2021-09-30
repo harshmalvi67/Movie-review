@@ -63,8 +63,7 @@ function App() {
           <Route path="/about" exact = {true}>
             <About/>
           </Route>
-          <Route path="/viewdetails/:id" exact = {true}>
-              <Details data = {data}/>
+          <Route path="/viewdetails/:id" exact = {true} children = {<Details data = {data} />}>
             </Route>
           <Route>
             Error

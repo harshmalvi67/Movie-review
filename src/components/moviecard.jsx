@@ -18,10 +18,7 @@ export default function Moviecard({data}) {
                 
                 <p className="card-text">Rating : {data.show.rating.average ? data.show.rating.average : 9.0}</p>
                 
-                <Link to={{
-                    pathname : '/viewdetails/' + data.show.id,
-                    params : data
-                }} className="btn btn-primary" >View Details</Link>
+                <Link to={`/viewdetails/${data.show.id}`} className="btn btn-primary" >View Details</Link>
             
             </div>
         
